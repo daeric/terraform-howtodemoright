@@ -1,5 +1,5 @@
 terraform {
-  required_providers {
+  provider {
     nutanix = {
       source  = "nutanix/nutanix"
       version = ">=1.4.1"
@@ -17,7 +17,7 @@ provider "nutanix" {
 
 
 terraform {
-  required_providers {
+  provider {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 3.0"
