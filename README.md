@@ -1,6 +1,6 @@
 # tech-exercise
 
-This code is designed to deploy 
+This code is designed to: 
 - Deploy VM1 on-prem in our Nutanix cluster
 - Deploy a VPC in AWS
 - Deploy VM2 in AWS attached to the newly created VPC
