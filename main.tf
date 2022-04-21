@@ -20,7 +20,7 @@ resource "nutanix_image" "CentOS" {
   source_uri  = "http://10.0.0.10/software/centos.qcow2"
 }
 
-resource "nutanix_virtual_machine" "Windows_2019" {
+resource "nutanix_virtual_machine" "VM1" {
   name                 = "VM1"
   cluster_uuid         = data.nutanix_cluster.cluster.id
   num_vcpus_per_socket = "4"
