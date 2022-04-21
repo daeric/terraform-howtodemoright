@@ -15,13 +15,13 @@ data "nutanix_subnet" "subnet" {
   subnet_name = var.subnet_name
 }
 
-resource "nutanix_image" "Server_2019_Image" {
-  name        = "Server 2019 Image"
-  source_uri  = "http://10.0.0.10/software/server2019.qcow2"
+resource "nutanix_image" "CentOS" {
+  name        = "CentOS"
+  source_uri  = "http://10.0.0.10/software/centos.qcow2"
 }
 
 resource "nutanix_virtual_machine" "Windows_2019" {
-  name                 = "Server 2019"
+  name                 = "VM1"
   cluster_uuid         = data.nutanix_cluster.cluster.id
   num_vcpus_per_socket = "4"
   num_sockets          = "1"
@@ -30,7 +30,7 @@ resource "nutanix_virtual_machine" "Windows_2019" {
   disk_list {
     data_source_reference = {
       kind = "image"
-      uuid = nutanix_image.Server_2019_Image.id
+      uuid = nutanix_image.CentOS.id
     }
   }
 
