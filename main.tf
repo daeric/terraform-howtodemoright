@@ -21,7 +21,7 @@ resource "nutanix_image" "Server_2019_Image" {
 }
 
 resource "nutanix_virtual_machine" "Windows_2019" {
-  name                 = "Windows 2019"
+  name                 = "Server 2019"
   cluster_uuid         = data.nutanix_cluster.cluster.id
   num_vcpus_per_socket = "4"
   num_sockets          = "1"
