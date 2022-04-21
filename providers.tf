@@ -24,6 +24,3 @@ provider "nutanix" {
   insecure     = true
   wait_timeout = 60
 }
-
-
-
