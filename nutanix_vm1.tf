@@ -29,7 +29,7 @@ resource "nutanix_virtual_machine" "VM1" {
   }
 }
 
-resource "nutanix_virtual_machine" "VM1" {
+resource "nutanix_virtual_machine" "VM2" {
   name                 = "VM2"
   cluster_uuid         = data.nutanix_cluster.cluster.id
   num_vcpus_per_socket = "4"
@@ -48,7 +48,7 @@ resource "nutanix_virtual_machine" "VM1" {
   }
 }
 
-resource "nutanix_virtual_machine" "VM1" {
+resource "nutanix_virtual_machine" "VM3" {
   name                 = "VM3"
   cluster_uuid         = data.nutanix_cluster.cluster.id
   num_vcpus_per_socket = "4"
