@@ -5,11 +5,6 @@ data "nutanix_subnet" "subnet" {
   subnet_name = var.subnet_name
 }
 
-resource "nutanix_image" "CentOS" {
-  name        = "CentOS"
-  source_uri  = "http://10.0.0.10/software/centos.qcow2"
-}
-
 resource "nutanix_virtual_machine" "VM1" {
   name                 = "VM1"
   cluster_uuid         = data.nutanix_cluster.cluster.id
