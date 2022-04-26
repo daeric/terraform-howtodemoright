@@ -3,4 +3,5 @@ resource "aws_instance" "vm2" {
   instance_type = "t2.micro"
   key_name      = "MyKeyPair"
   subnet_id     = "subnet-0170967c983eec7f0"
+  vpc_security_group_ids     = "S2S"
 }
