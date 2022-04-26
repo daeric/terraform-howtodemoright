@@ -14,6 +14,6 @@ variable "endpoint" {
 variable "user" {
   type = string
 }
-variable "vpc_security_group_ids"
+variable "vpc_security_group_ids" {
   type = string
 }
