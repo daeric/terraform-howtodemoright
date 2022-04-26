@@ -15,7 +15,7 @@ resource "nutanix_virtual_machine" "VM1" {
   disk_list {
     data_source_reference = {
       kind = "image"
-      uuid = nutanix_image.CentOS.name
+      uuid = 76e051a4-82d7-49fd-accf-6d026fdc6475
     }
   }
 
