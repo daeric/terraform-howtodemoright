@@ -3,5 +3,4 @@ resource "aws_instance" "web_instance" {
   instance_type = "t2.micro"
   key_name      = "MyKeyPair"
   subnet_id     = "subnet-01"
- }
 }
