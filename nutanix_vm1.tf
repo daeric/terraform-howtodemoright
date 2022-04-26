@@ -4,9 +4,6 @@ data "nutanix_cluster" "cluster" {
 data "nutanix_subnet" "subnet" {
   subnet_name = var.subnet_name
 }
-data "nutanix_image" "CentOS" {
-  image_id = nutanix_image.CentOS.id
-}
 
 resource "nutanix_virtual_machine" "VM1" {
   name                 = "VM1"
@@ -18,7 +15,7 @@ resource "nutanix_virtual_machine" "VM1" {
   disk_list {
     data_source_reference = {
       kind = "image"
-      uuid = nutanix_image.CentOS.id
+      uuid = nutanix_image.CentOS.name
     }
   }
 
