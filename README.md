@@ -2,6 +2,4 @@
 
 This code is designed to: 
 - Deploy VM1 on-prem in our Nutanix cluster
-- Deploy a VPC in AWS
-- Deploy VM2 in AWS attached to the newly created VPC
-- Create a S2S VPN connection between the VPC and on-prem
+- Deploy VM2 in AWS attached to the existing remote-network VPC
