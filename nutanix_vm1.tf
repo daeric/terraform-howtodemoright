@@ -4,10 +4,9 @@ data "nutanix_cluster" "cluster" {
 data "nutanix_subnet" "subnet" {
   subnet_name = var.subnet_name
 }
-
-resource "nutanix_image" "CentOS" {
-   name        = "CentOS"
- }
+data "nutanix_image" "CentOS" {
+  image_id = nutanix_image.CentOS.id
+}
 
 resource "nutanix_virtual_machine" "VM1" {
   name                 = "VM1"
