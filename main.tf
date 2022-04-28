@@ -76,3 +76,4 @@ resource "nutanix_network_security_rule" "isolation" {
         values = ["Dev"]
     }
 }
+*/
