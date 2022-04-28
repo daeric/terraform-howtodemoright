@@ -53,7 +53,7 @@ resource "nutanix_virtual_machine" "DEV" {
   }
 }
 
-/*
+
 resource "nutanix_network_security_rule" "isolation" {
     name        = "isolate-prod-from-dev"
     description = "Isolate Production from Dev"
@@ -74,4 +74,3 @@ resource "nutanix_network_security_rule" "isolation" {
         values = ["Dev"]
     }
 }
-*/
