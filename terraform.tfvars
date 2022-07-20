@@ -1,5 +1,5 @@
 cluster_name               = "PHX-SPOC001-1"
-subnet_name                = "default"
+subnet_name                = "Primary"
 user                       = "admin"
 password                   = "how2Demoright!"
 endpoint                   = "10.38.1.9"
