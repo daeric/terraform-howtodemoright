@@ -1,0 +1,7 @@
+cluster_name               = "PROD"
+subnet_name                = "default"
+user                       = "admin"
+password                   = "how2Demoright!"
+endpoint                   = "10.0.0.50"
+foundation_endpoint        = "10.0.0.118"
+foundation_port            = "8000"
