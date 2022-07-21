@@ -81,7 +81,6 @@ resource "nutanix_virtual_machine" "PROD" {
   ]
 }
 
-
 resource "nutanix_virtual_machine" "DEV" {
   name                 = "DEV"
   cluster_uuid         = data.nutanix_cluster.cluster.id
